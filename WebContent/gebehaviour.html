@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="vendor/bootstrap-3.3.4-dist/css/bootstrap.css"
+	rel="stylesheet" />
+<script src="vendor/underscore-min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+<script src="vendor/backbone-min.js"></script>
+<link href="sass/MSUExerGame.css" rel="stylesheet" media="all" />
+<!-- <link href="sass/msuSummerCoachesMobile.css" rel="stylesheet"
+	media="all" /> -->
+<script src="vendor/bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa'
+	rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<script type="text/template" id="gebehaviour-template">
+	<header>
+		<div class="headerBackground">
+			<div class="msuMastHead">
+				<a href="http://www.msu.edu" rel="nofollow"><img
+					alt="Michigan State University"
+					src="Images/masthead-helmet-white.png"></a>
+			</div>
+			<div class="branchHeading">
+				<h1>MSU Exer Game</h1>
+			</div>
+		</div>
+	</header>
+	<div class="pageContent">
+
+
+		<div class="QuestionsContent CenterContent">
+
+			<span class="QuestionText">1) Considering a 7-day period (a
+				week), how many times on the average do you do the following kinds
+				of exercise for more than 15 minutes during your free time (write a
+				number in the blank) </span>
+			<div class="btn-group" id="Q1" data-toggle="buttons">
+				<p>
+					a) strenuous exercise <input type="text" class="form-control"
+						id="se"> times per week (i.e. running, jogging, hockey,
+					football, soccer, squash, basketball, cross country skiing, judo,
+					roller skating, vigorous swimming, vigorous long distance
+					bicycling)
+				</p>
+				<p>
+					b) moderate exercise (not exhausting) <input type="text"
+						class="form-control" id="me"> times per week (i.e. fast
+					walking, baseball, tennis, easy bicycling, volleyball, badminton,
+					easy swimming, alpine skiing, popular and folk dancing)
+				</p>
+				<p>
+					c) mild exercise (minimal effort) <input type="text"
+						class="form-control" id="mle"> times per week (i.e. yoga,
+					archery, fishing from river band, bowling, horseshoes, golf,
+					snow-mobiling, easy walking)
+				</p>
+
+			</div>
+
+			<span class="QuestionText">2) Considering a 7-Day period (a
+				week), during your leisure-time, how often do you engage in any
+				regular activity long enough to work up a sweat (heart beats
+				rapidly)? ?</span>
+			<div class="btn-group" id="Q2" data-toggle="buttons">
+				<label class="btn btn-default blue radio-inline"> <input
+					type="radio" class="toggle" value="often">Often
+				</label> <label class="btn btn-default blue radio-inline"> <input
+					type="radio" class="toggle" value="Sometimes"> Sometimes
+				</label> <label class="btn btn-default blue radio-inline"> <input
+					type="radio" class="toggle" value="Never/Rarely">
+					Never/Rarely 
+			</div>
+
+
+		</div>
+
+		<a href=""> <img src="Images/next.png" class="nextButton"
+			id="intensionStrengthNext" />
+		</a>
+
+	</div>
+
+
+	<footer>
+		<div id="linked-footer-container">
+			<div id="linked-footer">
+
+				<div class="footer-logo">
+					<a href="http://www.msu.edu"><img
+						src="http://education.msu.edu/images/MSU-wordmark.png"
+						alt="Michigan State University Wordmark"></a>
+				</div>
+				<div id="footer-text">
+					<div class="footerSection">
+						<a href="http://www.msu.edu">Michigan State University</a> | <a
+							href="http://cas.msu.edu">Communication Ats and Science</a> | <a
+							href="http://education.msu.edu/sitemap.asp">Sitemap</a> | <a
+							href="http://education.msu.edu/about/contact/">Contact Us</a>
+					</div>
+
+					<div class="footerSection">© Communication Ats and Science,
+						Michigan State University</div>
+					<div class="footerSection">308 West Circle Dr | East Lansing,
+						MI 48824</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</script> 
+	<script src="JavaScript/gebehaviour.js"></script>
+</body>
+</html>

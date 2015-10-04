@@ -1,0 +1,243 @@
+body {
+	font-family: 'Comfortaa';
+	font-family: 'Lucida Grande', Tahoma;
+	background-repeat: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #3A5795;
+}
+
+.headerBackground {
+	margin: auto;
+	background-size: 100%;
+}
+
+.headerBackground .branchHeading h1 {
+	margin: auto;
+	background-color: #3A5795;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	opacity: 0.8;
+}
+
+.pageContent {
+	height: auto !important;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #E5E8F2;
+}
+
+.pageContent .QuestionsContent .QuestionText {
+	display: inline-block;
+	font-size: 18px;
+	margin: 3%;
+	margin-left: 0%;
+}
+
+.pageContent .QuestionsContent .btn-group .SideTextLeft, .pageContent .QuestionsContent .btn-group .SideTextRight  {
+	float: left;
+}
+
+.pageContent .QuestionsContent .btn-group .radio-inline {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.pageContent .QuestionsContent .btn-group .btn-default.active {
+	color: #fff;
+	background-color: #3A5795;
+}
+
+.pageContent .textParagraph {
+	color: #333;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 30px;
+	line-height: 20px;
+}
+
+.pageContent div {
+	padding: 0px;
+	width: 100%;
+	background: transparent;
+	border: 0;
+}
+
+.pageContent div #fbLogin {
+	width: 300px;
+	height: 50px;
+}
+
+.pageContent .nextButton {
+	width: 300px;
+	margin-left: 40%;
+	margin-bottom: 30px;
+}
+
+.pageContent .pictureContent {
+	margin: 20px;
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.pageContent .infoContent {
+	color: #333333;
+	margin: 20px;
+	background-color: #fff;
+	float: left;
+	width: 20%;
+	height: 300px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.pageContent .QuestionsContent {
+	color: #333333;
+	background-color: #fff;
+	padding: 20px;
+	margin: 20px;
+	float: right;
+	width: 60%;
+	height: auto;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+.pageContent .CenterContent{
+    float: none;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pageContent .postContent {
+	background-color: #fff;
+	float: left;
+	width: 100%;
+	height: 700px;
+	margin: 20px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.pageContent .postContent .profile {
+	background-color: #fff;
+	height: 75px;
+	border-bottom: 1px solid #ccc;
+}
+
+.pageContent .postContent .profile .profilepic {
+	float: left;
+	margin: 7px;
+	width: 50px;
+}
+
+.pageContent .postContent .profile .profilename {
+	float: left;
+	width: 80%;
+	margin-top: 7px;
+	color: #3A5795;
+	font-size: 16px;
+}
+
+.pageContent .postContent .profile .profiletext {
+	float: left;
+	width: 80%;
+	color: #ccc;
+	font-size: 10px;
+}
+
+.pageContent .postContent .post .postpic {
+	float: left;
+	margin: 7px;
+	margin-top: 25px;
+	width: 40%;
+}
+
+.pageContent .postContent .post .posttext {
+	float: left;
+	width: 40%;
+	color: #888;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.pageContent .postContent .post .postheading {
+	float: left;
+	width: 50%;
+	margin-top: 25px;
+	color: #3A5795;
+	font-size: 20px;
+}
+
+#linked-footer-container {
+	background-color: #3A5795;
+	opacity: 0.8;
+}
+
+#linked-footer-container #linked-footer {
+	padding: 20px;
+}
+
+#linked-footer-container #linked-footer .footer-logo {
+	float: left;
+	margin-right: 5%;
+}
+
+#linked-footer-container #linked-footer #footer-text .footerSection {
+	margin: 0.5%;
+	color: #fff;
+}
+
+#linked-footer-container #linked-footer #footer-text .footerSection a {
+	color: #fff;
+}
+.profileContent {
+	background-color: #fff;
+    height: 75px;
+    border-bottom: 1px solid #ccc !important;
+}
+.profilepic{
+	float: left;
+    margin: 7px;
+    width: 50px !important;
+}
+.profilename {
+	float: left;
+    width: 80% !important;
+    margin-top: 7px;
+    color: #3A5795;
+    font-size: 16px;
+}
+.profiletext{
+	float: left;
+	width: 80% !important;
+	color: #ccc;
+	font-size: 10px;
+}
+.postCenterContent{
+	height: auto !important;
+	width:90% !important;
+}
+input[type="text"] {
+    width: 100px;
+}
+.SideTextLeft{
+	width: 130px;
+	text-align: right;
+}
+.SideTextRight{
+	width: 130px;
+	 
+}
+@media screen and (max-width: 720px) {
+    .pageContent .CenterContent{
+       width: 95%;
+    }
+    
+}
+/*# sourceMappingURL=MSUExerGame.css.map */

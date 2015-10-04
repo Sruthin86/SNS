@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="vendor/bootstrap-3.3.4-dist/css/bootstrap.css"
+	rel="stylesheet" />
+<script src="vendor/underscore-min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+<script src="vendor/backbone-min.js"></script>
+<link href="sass/MSUExerGame.css" rel="stylesheet" media="all" />
+<!-- <link href="sass/msuSummerCoachesMobile.css" rel="stylesheet"
+	media="all" /> -->
+<script src="vendor/bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<script type="text/template" id="tieStrength-template">
+	<header>
+
+		<div class="headerBackground">
+			<div class="msuMastHead">
+				<a href="http://www.msu.edu" rel="nofollow"><img
+					alt="Michigan State University"
+					src="Images/masthead-helmet-white.png"></a>
+			</div>
+			<div class="branchHeading">
+				<h1>MSU Exer Game</h1>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="pageContent">
+		
+		<div class="QuestionsContent CenterContent">
+			<div class="postContent postCenterContent ">
+			<div class = "profile">
+				<div class = "profilepic"><img src="<%= img%>" alt="<%= name %>" height="50px" width="50px"></div>
+				<div class = "profilename"><%= name %></div>
+				<div class = "profiletext">6 minutes ago</div>
+			</div>
+			<div class = "post">
+				<div class = "postpic"><img src="Images/nike.png" alt="" height="200px" width="200px"></div>
+				<% if(randNum == 1 || randNum == 2) { %>
+        			<div class = "postheading">I just finished a run with Nike + Running</div>
+    			<% } else { %>
+        			<div class = "postheading">I just started a run with Nike + Running</div>
+    			<% } %>
+				<div class = "posttext">Cheer me </div>
+				<div class = "posttext">Cheer me on comments and likes and I'll hear it along the way </div>
+			</div>
+		
+		</div>
+			<span class = "QuestionText">1) This Facebook status update is worth sharing with others ?</span>
+			
+			<div class="btn-group" id="Q1" data-toggle="buttons">
+				<span class = "SideTextRight"> barely know them</span>
+				<label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="1">1
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="2"> 2
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="3"> 3
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="4"> 4
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="5"> 5
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="6"> 6
+				</label> <label class="btn btn-default blue  radio-inline"> <input
+					type="radio" class="toggle" value="7"> 7
+				</label>
+				<span class = "SideTextLeft"> barely know them</span>
+			</div>
+			
+			<span class = "QuestionText">2) I will recommend this Facebook status update to others
+				?</span>
+			<div class="btn-group" id="Q2" data-toggle="buttons">
+				<span class = "SideTextRight"> would never ask</span>
+				<label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="1">1
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="2"> 2
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="3"> 3
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="4"> 4
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="5"> 5
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="6"> 6
+				</label> <label class="btn btn-default blue  radio-inline"> <input
+					type="radio" class="toggle" value="7"> 7
+				</label>
+				<span class = "SideTextLeft">Very comfortable</span>
+			</div>
+			<span class = "QuestionText">3) I will "like" this message on Facebook
+				?</span>
+			<div class="btn-group" id="Q3" data-toggle="buttons">
+				<span class = "SideTextRight"> not helpful at all</span>
+				<label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="1">1
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="2"> 2
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="3"> 3
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="4"> 4
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="5"> 5
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="6"> 6
+				</label> <label class="btn btn-default blue  radio-inline"> <input
+					type="radio" class="toggle" value="7"> 7
+				</label>
+ 				<span class = "SideTextLeft">Very helpful</span>
+			</div>
+			<span class = "QuestionText">4) I will "share" this message on Facebook ?</span>
+			<div class="btn-group" id="Q4" data-toggle="buttons">
+				<span class = "SideTextRight">not upset at all</span>
+				<label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="1">1
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="2"> 2
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="3"> 3
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="4"> 4
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="5"> 5
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="6"> 6
+				</label> <label class="btn btn-default blue  radio-inline"> <input
+					type="radio" class="toggle" value="7"> 7
+				</label>
+			<span class = "SideTextLeft">Very upset</span>
+			</div>
+			<span class = "QuestionText">5) I will "comment" on this message on Facebook?</span>
+			<div class="btn-group" id="Q5" data-toggle="buttons">
+			<span class = "SideTextRight">would not matter at all</span>
+				<label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="1">1
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="2"> 2
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="3"> 3
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="4"> 4
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="5"> 5
+				</label> <label class="btn btn-default blue radio-inline"> <input type="radio"
+					class="toggle" value="6"> 6
+				</label> <label class="btn btn-default blue  radio-inline"> <input
+					type="radio" class="toggle" value="7"> 7
+				</label>
+			<span class = "SideTextLeft">Must bring them</span>
+			</div>
+		</div>
+		
+		<a href=""> <img src="Images/next.png" class="nextButton"
+			id="intensionStrengthNext" />
+		</a>
+	</div>
+
+
+
+
+	<footer>
+		<div id="linked-footer-container">
+			<div id="linked-footer">
+
+				<div class="footer-logo">
+					<a href="http://www.msu.edu"><img
+						src="http://education.msu.edu/images/MSU-wordmark.png"
+						alt="Michigan State University Wordmark"></a>
+				</div>
+				<div id="footer-text">
+					<div class="footerSection">
+						<a href="http://www.msu.edu">Michigan State University</a> | <a
+							href="http://cas.msu.edu">Communication Ats and Science</a> | <a
+							href="http://education.msu.edu/sitemap.asp">Sitemap</a> | <a
+							href="http://education.msu.edu/about/contact/">Contact Us</a>
+					</div>
+
+					<div class="footerSection">© Communication Ats and Science,
+						Michigan State University</div>
+					<div class="footerSection">308 West Circle Dr | East Lansing,
+						MI 48824</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</script>
+ <script src="JavaScript/tieStrength.js"></script> 
+</body>
+</html>
